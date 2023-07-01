@@ -30,3 +30,15 @@ fn max(x: int, y: int): int = if x > y { x } else { y };
 ```
 
 But this becomes problematic when you want to add side effects, so should probably be avoided most of the time.
+
+`else` and `ifelse` statments are placed on the same line as the end bracket of the last statement as so:
+
+```rust
+if x < 10 {
+    x++
+} ifelse x = 10 {
+    std.print("X is 10!");
+} else {
+    x--;
+}
+```
