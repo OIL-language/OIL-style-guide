@@ -23,6 +23,8 @@ fn add(x:int, y;int): int { z = x + y; return z; }
 ```
 When doing the latter try to keep spaces between the curly brackets and the contents;
 
+## Examples
+
 this is good:
 ```rust
 fn timesByTwo(x:int): int { z = x * 2; return z; }
