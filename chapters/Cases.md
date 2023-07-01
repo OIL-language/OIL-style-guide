@@ -1,17 +1,16 @@
 [Back to Contents](https://github.com/OIL-language/OIL-style-guide/blob/main/README.md)
 # 1. Cases
 
-For cases we have a set of rules:
+We use the common style of PascalCase for types, and snake_case for function names:
+```rust
+import std.io.File;
 
-### Camal case:
-Function,
-Varaible names
+type TypeName { x: Int; };
 
-### Pascal case:
-Classes,
-Enum names, 
-Enum contents,
-Struct names
-
-### Kebab case:
-Filenames
+fn snake_case_function_name(): TypeName = {
+    File.stdout -> File.write "Whatever";
+    TypeName {
+        x: 10;
+    };
+};
+```
