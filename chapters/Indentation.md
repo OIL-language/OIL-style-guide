@@ -1,36 +1,32 @@
 [Back to Contents](https://github.com/OIL-language/OIL-style-guide/blob/main/README.md)
 # 1. Indentation
 
-Try to use four spaces for a tab as in this example
-
+You should prouse four spaces for indentation, as opposed to a tab:
 ```rust
-import stdout;
+import std.io.File;
 
-fn main(): void {
-    stdout.println("Hello world!");
+fn main() {
+/*
+xxxx
+*/
+    File.stdout -> File.writeln "Hello world!";
 }
 ```
 
-Curly braces should be placed like this:
+Our language uses "egyptian curly braces" that are on the same line as the previous:
 ```rust
-fn add(x:int, y:int): int {
-    z = x + y;
-    return z;
-}
+fn max(x: int, y: int): int = {
+    if x > y {
+        x
+    } else {
+        y
+    }
+};
 ```
-or like this:
-```rust
-fn add(x:int, y;int): int { z = x + y; return z; }
-```
-When doing the latter try to keep spaces between the curly brackets and the contents;
 
-## Examples
+You can ignore the outer braces in functions if the function is small and pure:
+```rust
+fn max(x: int, y: int): int = if x > y { x } else { y };
+```
 
-this is good:
-```rust
-fn timesByTwo(x:int): int { z = x * 2; return z; }
-```
-this is not good:
-```rust
-fn timesByTwo(x:int): int {z = x * 2;return z;]
-```
+But this becomes problematic when you want to add side effects, so should probably be avoided most of the time.
