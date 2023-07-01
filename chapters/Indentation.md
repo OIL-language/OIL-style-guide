@@ -24,7 +24,7 @@ fn max(x: int, y: int): int = {
 };
 ```
 
-You can ignore the outer braces in functions if the function is small and pure:
+You can ignore the outer braces in functions if the function is pure:
 ```rust
 fn max(x: int, y: int): int = if x > y { x } else { y };
 ```
