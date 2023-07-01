@@ -1,5 +1,5 @@
 [Back to Contents](https://github.com/OIL-language/OIL-style-guide/blob/main/README.md)
-# 1. Indentation
+# 2. Indentation
 
 You should prouse four spaces for indentation, as opposed to a tab:
 ```rust
