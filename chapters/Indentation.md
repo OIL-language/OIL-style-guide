@@ -1,7 +1,7 @@
 [Back to Contents](https://github.com/OIL-language/OIL-style-guide/blob/main/README.md)
 # 2. Indentation
 
-You should prouse four spaces for indentation, as opposed to a tab:
+You should use four spaces for indentation, as opposed to a tab:
 ```rust
 import std.io.File;
 
