@@ -7,11 +7,11 @@ For cases we have a set of rules:
 Function,
 Varaible names
 
-#### Pascal case:
+### Pascal case:
 Classes,
 Enum names, 
 Enum contents,
 Struct names
 
 ### Kebab case:
-File names
+Filenames
