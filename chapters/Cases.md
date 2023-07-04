@@ -5,12 +5,14 @@ We use the common style of PascalCase for types, and snake_case for function nam
 ```rust
 import std.io.File;
 
-type TypeName { x: Int; };
+type TypeName {
+    x: int;
+};
 
 fn snake_case_function_name(): TypeName = {
     File.stdout -> File.write "Whatever";
     TypeName {
-        x: 10;
+        x = 10;
     };
 };
 ```
